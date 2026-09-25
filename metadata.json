@@ -1,0 +1,6 @@
+{
+  "name": "HealthCare AI Hub",
+  "description": "Modern healthcare platform featuring AI risk assessment, specialist doctor directory with appointment scheduling, curated medical products, and patient health dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

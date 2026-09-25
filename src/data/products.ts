@@ -1,0 +1,276 @@
+import { Product } from '../types';
+
+export const HEALTH_PRODUCTS: Product[] = [
+  // Diabetes Products
+  {
+    id: 'prod-glucometer-kit',
+    name: 'AccuSync Wireless Blood Glucose Monitor Kit',
+    brand: 'MetabolicBio',
+    categoryId: 'diabetes',
+    price: 49.99,
+    originalPrice: 64.99,
+    rating: 4.9,
+    reviewCount: 420,
+    image: '/src/assets/images/product_glucometer_1790327198048.jpg',
+    badge: 'FDA Cleared · Clinical Accuracy',
+    description: 'Advanced ISO 15197:2013 compliant wireless glucometer kit with 5-second test time, no coding required, and automatic Bluetooth syncing to iOS/Android health dashboards.',
+    clinicalHighlights: [
+      'Requires only tiny 0.5 μL capillary blood sample',
+      'Stores up to 1,000 readings with pre/post-prandial meal markers',
+      'Hypoglycemic & hyperglycemic audible alert thresholds',
+      'Includes 100 sterile test strips and 100 gauge-30 lancets'
+    ],
+    usageInstructions: 'Insert test strip into the slot. Apply capillary blood droplet to the strip edge. Results appear in 5 seconds with automatic wireless logging.',
+    stockCount: 42,
+    inStock: true,
+    dosageOrSize: 'Complete Kit (Meter + 100 Strips + Lancets)',
+  },
+  {
+    id: 'prod-metabolic-support',
+    name: 'Berberine Phytosome & Alpha-Lipoic Acid 600mg',
+    brand: 'Apex Endocrinology',
+    categoryId: 'diabetes',
+    price: 38.50,
+    originalPrice: 45.00,
+    rating: 4.8,
+    reviewCount: 285,
+    image: '/src/assets/images/product_glucometer_1790327198048.jpg',
+    badge: 'Third-Party Lab Tested',
+    description: 'High-absorption bio-enhanced berberine phospholipid complex combined with R-alpha lipoic acid and chromium picolinate to support insulin receptor sensitivity and post-meal glucose clearance.',
+    clinicalHighlights: [
+      'Phospholipid delivery system with 9.6x higher bioavailability',
+      'Supports hepatic AMPK activation and cellular glucose uptake',
+      'Non-GMO, vegan capsules free from synthetic binders'
+    ],
+    usageInstructions: 'Take 1 capsule twice daily, 15 to 20 minutes prior to your two largest carbohydrate-containing meals.',
+    stockCount: 65,
+    inStock: true,
+    dosageOrSize: '60 Delayed-Release Vegetarian Capsules',
+  },
+  {
+    id: 'prod-diabetic-foot-cream',
+    name: 'Intensive Urea 20% Diabetic Foot Repair Cream',
+    brand: 'DermCare Medical',
+    categoryId: 'diabetes',
+    price: 18.95,
+    rating: 4.7,
+    reviewCount: 164,
+    image: '/src/assets/images/product_glucometer_1790327198048.jpg',
+    badge: 'Podiatrist Approved',
+    description: 'Clinical-strength 20% urea cream with ceramides and colloidal oatmeal formulated specifically for diabetic xerosis, calluses, and heel fissure protection.',
+    clinicalHighlights: [
+      'Keratolytic action gently dissolves thickened hyperkeratotic skin',
+      'Restores lipid moisture barrier to guard against microbial infection',
+      'Fragrance-free and hypoallergenic formulation'
+    ],
+    usageInstructions: 'Massage thoroughly onto clean, dry feet twice daily. Avoid applying between toes to prevent maceration.',
+    stockCount: 88,
+    inStock: true,
+    dosageOrSize: '150 ml (5.1 fl oz)',
+  },
+
+  // Heart Health Products
+  {
+    id: 'prod-bp-monitor',
+    name: 'CardioPrecision Smart Upper Arm Blood Pressure Monitor',
+    brand: 'VascularSense',
+    categoryId: 'heart',
+    price: 74.99,
+    originalPrice: 89.99,
+    rating: 4.9,
+    reviewCount: 512,
+    image: '/src/assets/images/product_glucometer_1790327198048.jpg',
+    badge: 'AHA Validated · Arrhythmia Detection',
+    description: 'Hospital-grade dual-sensor oscillometric blood pressure monitor with contour wide-range cuff (9"-17"), irregular heartbeat warning, and multi-user tracking.',
+    clinicalHighlights: [
+      'AAMI and ESH clinically validated measurement accuracy (±3 mmHg)',
+      'Simultaneous detection of irregular pulse and pulse pressure index',
+      'Backlit high-contrast display with WHO color classification scale'
+    ],
+    usageInstructions: 'Sit quietly for 5 minutes prior to measurement. Wrap cuff snugly 1 inch above the elbow crease at heart level and press Start.',
+    stockCount: 34,
+    inStock: true,
+    dosageOrSize: 'Standard & Extra-Large Comfit Cuff Included',
+  },
+  {
+    id: 'prod-coq10-ubiquinol',
+    name: 'Ubiquinol CoQ10 200mg Active Cardiovascular Antioxidant',
+    brand: 'CardioLife Labs',
+    categoryId: 'heart',
+    price: 44.00,
+    originalPrice: 52.00,
+    rating: 4.85,
+    reviewCount: 340,
+    image: '/src/assets/images/product_glucometer_1790327198048.jpg',
+    badge: 'Cardiologist Recommended',
+    description: 'Active, un-oxidized Kaneka Ubiquinol® with superior cellular uptake to support cardiac ATP bioenergetics and mitigate statin-associated muscle fatigue.',
+    clinicalHighlights: [
+      'Ready for direct utilization without hepatic conversion',
+      'Protects low-density lipoprotein (LDL) from oxidative damage',
+      'Essential cofactor for mitochondrial electron transport'
+    ],
+    usageInstructions: 'Take 1 softgel daily with a fat-containing meal for optimal absorption.',
+    stockCount: 50,
+    inStock: true,
+    dosageOrSize: '60 Liquid Softgels (2-Month Supply)',
+  },
+
+  // Skin Care Products
+  {
+    id: 'prod-ceramide-barrier',
+    name: 'Ceramide Tri-Complex Dermal Barrier Restorative Balm',
+    brand: 'CutisMD Laboratory',
+    categoryId: 'skin',
+    price: 26.50,
+    rating: 4.88,
+    reviewCount: 388,
+    image: '/src/assets/images/product_glucometer_1790327198048.jpg',
+    badge: 'National Eczema Association Accepted',
+    description: 'Physiological lipid ratio (3:1:1 Ceramides, Cholesterol, Fatty Acids) combined with 2% Colloidal Oatmeal and Centella Asiatica to rapidly seal compromised epidermis.',
+    clinicalHighlights: [
+      'Replenishes essential ceramides EOP, NP, and AP',
+      'Non-comedogenic, steroid-free, fragrance-free',
+      'Clinically demonstrated to improve barrier integrity within 48 hours'
+    ],
+    usageInstructions: 'Apply generously to damp skin post-cleansing morning and evening.',
+    stockCount: 72,
+    inStock: true,
+    dosageOrSize: '200 ml / 6.7 oz Pump Bottle',
+  },
+  {
+    id: 'prod-mineral-sunscreen',
+    name: 'Pure Zinc Sheer Mineral Sunscreen SPF 50+ PA++++',
+    brand: 'CutisMD Laboratory',
+    categoryId: 'skin',
+    price: 32.00,
+    rating: 4.92,
+    reviewCount: 460,
+    image: '/src/assets/images/product_glucometer_1790327198048.jpg',
+    badge: 'Dermatologist Tested',
+    description: '100% non-nano zinc oxide (21.4%) broad-spectrum physical block enriched with antioxidant ectoin and bisabolol. Zero white cast and velvet matte finish.',
+    clinicalHighlights: [
+      'Defends against UVA, UVB, high-energy visible blue light, and pollution',
+      'Water and sweat resistant for up to 80 minutes',
+      'Safe for post-procedure, rosacea-prone, and ultra-reactive skin'
+    ],
+    usageInstructions: 'Dispense a nickel-sized amount and smooth evenly over face and neck 15 minutes before sun exposure.',
+    stockCount: 80,
+    inStock: true,
+    dosageOrSize: '75 ml / 2.5 fl oz',
+  },
+
+  // Women's Health Products
+  {
+    id: 'prod-prenatal-multivitamin',
+    name: 'Comprehensive Pre-Natal & Hormone Support MethylFolate',
+    brand: 'FeminaBio Care',
+    categoryId: 'women',
+    price: 42.00,
+    originalPrice: 48.00,
+    rating: 4.94,
+    reviewCount: 310,
+    image: '/src/assets/images/product_glucometer_1790327198048.jpg',
+    badge: 'OB-GYN Formulated',
+    description: 'Advanced pre-conception, pregnancy, and postpartum multivitamin featuring active L-5-methyltetrahydrofolate (L-5-MTHF), gentle chelated iron bisglycinate, and plant DHA.',
+    clinicalHighlights: [
+      'Non-constipating Ferrochel® iron formula',
+      'Active B-vitamins bypassing common MTHFR genetic polymorphism',
+      'Choline 300mg for fetal neural tube and cognitive development'
+    ],
+    usageInstructions: 'Take 2 capsules daily with breakfast or lunch.',
+    stockCount: 45,
+    inStock: true,
+    dosageOrSize: '60 Capsules (30-Day Supply)',
+  },
+
+  // Bone & Joint Products
+  {
+    id: 'prod-joint-matrix',
+    name: 'OsteoFlex Glucosamine, Chondroitin & UC-II Collagen',
+    brand: 'ArthroCare Health',
+    categoryId: 'bone',
+    price: 36.00,
+    rating: 4.82,
+    reviewCount: 230,
+    image: '/src/assets/images/product_glucometer_1790327198048.jpg',
+    badge: 'Clinical Trial Verified',
+    description: 'Patented undenatured type II collagen (UC-II®) combined with pharmaceutical-grade glucosamine sulfate, OptiMSM®, and hyaluronic acid for synovial joint cushioning.',
+    clinicalHighlights: [
+      'Small once-daily serving clinically proven more effective than Glucosamine alone',
+      'Soothes joint friction and improves knee extension flexibility',
+      'Supports healthy cartilage extracellular matrix synthesis'
+    ],
+    usageInstructions: 'Take 2 tablets daily with water, preferably in the morning.',
+    stockCount: 58,
+    inStock: true,
+    dosageOrSize: '60 Film-Coated Caplets',
+  },
+
+  // Mental Health Products
+  {
+    id: 'prod-magnesium-calm',
+    name: 'Triple Chelate Magnesium Glycinate & L-Theanine 400mg',
+    brand: 'NeuroCalm Health',
+    categoryId: 'mental',
+    price: 29.50,
+    rating: 4.91,
+    reviewCount: 475,
+    image: '/src/assets/images/product_glucometer_1790327198048.jpg',
+    badge: 'Purity & Heavy Metal Tested',
+    description: 'Highly bioavailable magnesium bisglycinate bound to GABA-promoting glycine, amplified with Suntheanine® L-theanine and bioactive vitamin B6 to soothe nervous tension and restore restorative deep sleep architecture.',
+    clinicalHighlights: [
+      'Non-laxative, high GI-tolerance chelated elemental magnesium',
+      'Fosters alpha brainwave activity without causing daytime grogginess',
+      'Supports muscle relaxation and nocturnal heart rate lowering'
+    ],
+    usageInstructions: 'Take 2 capsules 30 to 45 minutes before bedtime, or 1 capsule twice daily during stressful periods.',
+    stockCount: 95,
+    inStock: true,
+    dosageOrSize: '120 Vegetarian Capsules (60 Servings)',
+  },
+
+  // General Health Products
+  {
+    id: 'prod-pulse-oximeter',
+    name: 'Medical-Grade Fingertip Pulse Oximeter with Plethysmograph',
+    brand: 'VascularSense',
+    categoryId: 'general',
+    price: 32.50,
+    originalPrice: 39.99,
+    rating: 4.87,
+    reviewCount: 390,
+    image: '/src/assets/images/product_glucometer_1790327198048.jpg',
+    badge: 'Hospital Standard Accuracy',
+    description: 'Precision dual-wavelength optical sensor reading SpO2 blood oxygen saturation, pulse rate, and perfusion index (PI) on a multi-directional OLED display.',
+    clinicalHighlights: [
+      'Accurate even during low blood perfusion situations (PI ≥ 0.2%)',
+      'Hypoallergenic medical silicone finger chamber',
+      'Automatic auto-off power preservation and lanyard included'
+    ],
+    usageInstructions: 'Place index finger into chamber with sensor flush against the nail bed. Hold hand stationary for 5-8 seconds.',
+    stockCount: 60,
+    inStock: true,
+    dosageOrSize: 'Oximeter + Lanyard + 2 AAA Batteries',
+  },
+  {
+    id: 'prod-vitamin-d3k2',
+    name: 'Micro-Liposomal Vitamin D3 5000 IU + K2 (MK-7) Drops',
+    brand: 'Apex Endocrinology',
+    categoryId: 'general',
+    price: 24.00,
+    rating: 4.93,
+    reviewCount: 520,
+    image: '/src/assets/images/product_glucometer_1790327198048.jpg',
+    badge: 'Certified Organic MCT Base',
+    description: 'Synergistic formulation directing calcium to bone matrix via osteocalcin activation rather than vascular soft tissue calcification.',
+    clinicalHighlights: [
+      'Pure trans-form MenaQ7® Vitamin K2 with 72-hour half life',
+      'Organic cold-pressed coconut medium-chain triglyceride oil carrier',
+      '1 drop = 1,000 IU flexible titration'
+    ],
+    usageInstructions: 'Take 5 drops daily directly onto tongue or mixed into morning beverage.',
+    stockCount: 85,
+    inStock: true,
+    dosageOrSize: '30 ml (600 Concentrated Drops)',
+  }
+];
