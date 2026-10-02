@@ -1,4 +1,5 @@
 import express from 'express';
+import http from 'http';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -12,6 +13,7 @@ const __dirname = path.dirname(__filename);
 
 async function startServer() {
   const app = express();
+  const server = http.createServer(app);
   const PORT = Number(process.env.PORT) || 3000;
 
   app.use(express.json({ limit: '30mb' }));
@@ -269,7 +271,9 @@ Analyze these parameters and provide structured clinical insights with personali
     const vite = await createViteServer({
       server: {
         middlewareMode: true,
-        hmr: process.env.DISABLE_HMR !== 'true',
+        hmr: {
+          server,
+        },
       },
       appType: 'spa',
     });
@@ -281,7 +285,7 @@ Analyze these parameters and provide structured clinical insights with personali
     });
   }
 
-  app.listen(PORT, '0.0.0.0', () => {
+  server.listen(PORT, '0.0.0.0', () => {
     console.log(`HealthCare AI Hub fullstack server listening on http://0.0.0.0:${PORT}`);
   });
 }
